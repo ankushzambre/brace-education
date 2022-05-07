@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-	color: #333;
+	color: #fff;
 	font: 700 2.25rem/2.875rem "Montserrat", sans-serif;
 }
 
@@ -90,7 +90,7 @@ a:hover {
 	border: 0.125rem solid #19375d;
 	border-radius: 2rem;
 	background-color: #19375d;
-	color: #333;
+	color: #fff;
 	font: 600 0.875rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
@@ -109,7 +109,7 @@ a:hover {
 	border: 0.125rem solid #19375d;
 	border-radius: 2rem;
 	background-color: #19375d;
-	color: #333;
+	color: #fff;
 	font: 600 0.875rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
@@ -348,7 +348,7 @@ screen and (-ms-high-contrast: none) {
 #pmsgSubmit.h3.text-center {
 	display: block;
 	margin-bottom: 0;
-	color: #333;
+	color: #fff;
 	font-weight: 700;
 	font-size: 1.125rem;
 	line-height: 1rem;
@@ -856,7 +856,7 @@ screen and (-ms-high-contrast: none) {
 .form-1 .help-block,
 .form-1 .checkbox,
 .form-1 .checkbox a {
-	color: #333;
+	color: #fff;
 }
 
 .form-1 p {
@@ -864,7 +864,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .form-1 .list-unstyled .fas {
-	color: #333;
+	color: #fff;
 	font-size: 0.5rem;
 	line-height: 1.5rem;
 }
@@ -883,8 +883,8 @@ screen and (-ms-high-contrast: none) {
 }
 
 .form-1 .form-control-submit-button {
-	border: 0.125rem solid #333;
-	background-color: transparent;
+	border: 0.125rem solid #fff;
+	/* background-color: transparent; */
 }
 
 .form-1 .form-control-submit-button:hover {
@@ -946,7 +946,7 @@ screen and (-ms-high-contrast: none) {
 	height: 2.125rem;
 	border-radius: 50%;
 	background-color: #19375d;
-	color: #333;
+	color: #fff;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 0.875rem;
@@ -1742,7 +1742,7 @@ a:hover.back-to-top {
 	}
 
 	.navbar-custom .fa-stack-1x {
-		color: #333;
+		color: #fff;
 		transition: all 0.2s ease;
 	}
 
