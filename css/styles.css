@@ -913,18 +913,18 @@ screen and (-ms-high-contrast: none) {
 }
 
 
-.br-slider-1 {
+.slider-1 {
 	padding-top: 3.5rem;
 	padding-bottom: 3rem;
 	background-color: #fbf9f5;
 	text-align: center;
 }
 
-.br-slider-1 .p-small {
+.slider-1 .p-small {
 	color: #797fa7;
 }
 
-.br-slider-1 .slider-container {
+.slider-1 .slider-container {
 	margin-right: 1.5rem;
 	margin-left: 1.5rem;
 }
