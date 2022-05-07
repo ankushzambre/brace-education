@@ -36,18 +36,6 @@
             $(".navbar-collapse").collapse('hide');
     });
 
-
-    // $('#clock').countdown('2020/12/27 08:50:56')
-    //     .on('update.countdown', function (event) {
-    //         var format = '<span class="counter-number">%D<br><span class="timer-text">Days</span></span><span class="counter-number">%H<br><span class="timer-text">Hours</span></span><span class="counter-number">%M<br><span class="timer-text">Minutes</span></span><span class="counter-number">%S<br><span class="timer-text">Seconds</span></span>';
-    //         $(this).html(event.strftime(format));
-    //     })
-    //     .on('finish.countdown', function (event) {
-    //         $(this).html('This offer has expired!')
-    //             .parent().addClass('disabled');
-    //     });
-
-
     var imageSliderOne = new Swiper('.image-slider-1', {
         autoplay: {
             delay: 3000,
