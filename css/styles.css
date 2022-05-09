@@ -758,7 +758,7 @@ screen and (-ms-high-contrast: none) {
 	position: relative;
 	padding-top: 8rem;
 	padding-bottom: 40%;
-	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/header-background.jpg') center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8)) center center no-repeat;
 	background-size: cover;
 	text-align: center;
 }
@@ -813,13 +813,13 @@ screen and (-ms-high-contrast: none) {
 }
 
 .header .br-br-btn-outline-lg {
-	border: 0.125rem solid #fff;
-	color: #fff;
+	border: 0.125rem solid #1a4c70;
+	color: #1a4c70;
 }
 
 .header .br-br-btn-outline-lg:hover {
-	background-color: #fff;
-	color: #333;
+	border: 0.125rem solid #1a4c70;
+	color: #fff;
 }
 
 .header .outer-container {
@@ -1711,7 +1711,7 @@ a:hover.back-to-top {
 
 	.navbar-custom .nav-item .nav-link {
 		padding: 0.25rem 0.75rem;
-		color: #eee;
+		color: #333;
 	}
 
 	.navbar-custom.top-nav-collapse {
