@@ -26,7 +26,7 @@ if (empty($_POST["terms"])) {
 }
 
 $EmailTo = "yourname@domain.com";
-$Subject = "New message from Brace Academy landing page";
+$Subject = "New message from BRACE Education Academy landing page";
 
 $Body = "";
 $Body .= "Name: ";
