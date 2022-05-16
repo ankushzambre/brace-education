@@ -1210,6 +1210,12 @@ screen and (-ms-high-contrast: none) {
 	text-align: center;
 }
 
+.br-cards h4 {
+	margin-bottom: 1rem;
+	text-align: center;
+	font-weight: bold;
+}
+
 .br-cards p {
 	text-align: center;
 }
@@ -2043,4 +2049,57 @@ a:hover.back-to-top {
 	.br-ex-basic-2 .image-container-small {
 		margin-left: 1.75rem;
 	}
+
+	/* New cards design css starts*/
+
+	/* MPSC card design start */
+	.flip-card {
+		background-color: transparent;
+		width: 300px;
+		height: 200px;
+		border: 1px solid #f1f1f1;
+		perspective: 1000px;
+		/* Remove this if you don't want the 3D effect */
+	}
+
+	/* This container is needed to position the front and back side */
+	.flip-card-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+	}
+
+	/* Do an horizontal flip when you move the mouse over the flip box container */
+	.flip-card:hover .flip-card-inner {
+		transform: rotateY(180deg);
+	}
+
+	/* Position the front and back side */
+	.flip-card-front,
+	.flip-card-back {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden;
+		/* Safari */
+		backface-visibility: hidden;
+	}
+
+	/* Style the front side (fallback if image is missing) */
+	.flip-card-front {
+		background-color: #bbb;
+		color: #fff;
+	}
+
+	/* Style the back side */
+	.flip-card-back {
+		background-color: #1a4c70;
+		color: white;
+		transform: rotateY(180deg);
+	}
+
+	/* MPSC catd design end */
 }
