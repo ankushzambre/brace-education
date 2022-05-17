@@ -7,11 +7,11 @@ if (empty($_POST["name"])) {
     $name = $_POST["name"];
 }
 
-if (empty($_POST["email"])) {
-    $errorMSG = "Email is required ";
-} else {
-    $email = $_POST["email"];
-}
+// if (empty($_POST["email"])) {
+//     $errorMSG = "Email is required ";
+// } else {
+//     $email = $_POST["email"];
+// }
 
 if (empty($_POST["phone"])) {
     $errorMSG = "Phone is required ";
@@ -19,13 +19,13 @@ if (empty($_POST["phone"])) {
     $phone = $_POST["phone"];
 }
 
-if (empty($_POST["terms"])) {
-    $errorMSG = "Terms is required ";
-} else {
-    $terms = $_POST["terms"];
-}
+// if (empty($_POST["terms"])) {
+//     $errorMSG = "Terms is required ";
+// } else {
+//     $terms = $_POST["terms"];
+// }
 
-$EmailTo = "yourname@domain.com";
+$EmailTo = "ankush.ivision@gmail.com";
 $Subject = "New registration from BRACE Education Academy landing page";
 
 // prepare email body text
