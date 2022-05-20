@@ -89,6 +89,10 @@ html {
 	color: #222 !important;
 }
 
+.navbar-dark .navbar-toggler {
+	color: #222 !important;
+}
+
 .remove-underline {
 	text-decoration: none;
 }
