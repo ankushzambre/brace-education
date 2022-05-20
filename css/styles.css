@@ -4,6 +4,95 @@ html {
 	height: 100%;
 }
 
+.form-3 h4 {
+	color: #fff;
+	font: 700 1.125rem/1.75rem "Montserrat", sans-serif;
+}
+
+.padding0 {
+	padding: 0 !important;
+}
+
+.paddingLeft40 {
+	padding-left: 40%;
+}
+
+/* Accordian design css starts*/
+#main {
+	margin: 10px 0;
+}
+
+#main #accordionId .card {
+	margin-bottom: 30px;
+	border: 0;
+}
+
+#main #accordionId .card .card-header {
+	border: 0;
+	-webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+	box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+	border-radius: 2px;
+	padding: 0;
+}
+
+#main #accordionId .card .card-header .btn-header-link {
+	color: #fff;
+	display: block;
+	text-align: left;
+	background: #1a4c70;
+	/* padding: 20px; */
+	font-weight: bold;
+	text-align: center;
+	font-size: 25px;
+}
+
+#main #accordionId .card .card-header .btn-header-link:after {
+	content: "\f107";
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	float: right;
+}
+
+#main #accordionId .card .card-header .btn-header-link.collapsed {
+	background: #1a4c70;
+	color: #fff;
+}
+
+#main #accordionId .card .card-header .btn-header-link.collapsed:after {
+	content: "\f106";
+}
+
+#main #accordionId .card .collapsing {
+	background: #fff;
+	line-height: 30px;
+}
+
+#main #accordionId .card .collapse {
+	border: 0;
+}
+
+#main #accordionId .card .collapse.show {
+	background: #fff;
+	line-height: 30px;
+	color: #222;
+}
+
+.form-group.required .control-label:after {
+	content: "*";
+	color: red;
+	/* position: absolute; */
+	margin-left: 4px;
+	top: 7px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #222 !important;
+}
+
+.remove-underline {
+	text-decoration: none;
+}
+
 .height23px {
 	height: 23px;
 }
@@ -337,6 +426,7 @@ input[type='checkbox'] {
 	margin-right: 0.375rem;
 }
 
+
 @media screen and (-ms-high-contrast: active),
 screen and (-ms-high-contrast: none) {
 	input[type='checkbox'] {
@@ -346,7 +436,7 @@ screen and (-ms-high-contrast: none) {
 
 .form-control-submit-button {
 	display: inline-block;
-	width: 100%;
+	width: 50%;
 	height: 3.125rem;
 	border: 0.125rem solid #1a4c70;
 	border-radius: 1.5rem;
@@ -2049,66 +2139,5 @@ a:hover.back-to-top {
 
 	.br-ex-basic-2 .image-container-small {
 		margin-left: 1.75rem;
-	}
-
-	/* Accordian design css starts*/
-	#main {
-		margin: 10px 0;
-	}
-
-	#main #accordionId .card {
-		margin-bottom: 30px;
-		border: 0;
-	}
-
-	#main #accordionId .card .card-header {
-		border: 0;
-		-webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
-		box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
-		border-radius: 2px;
-		padding: 0;
-	}
-
-	#main #accordionId .card .card-header .btn-header-link {
-		color: #fff;
-		display: block;
-		text-align: left;
-		background: #1a4c70;
-		padding: 20px;
-	}
-
-	#main #accordionId .card .card-header .btn-header-link:after {
-		content: "\f107";
-		font-family: 'Font Awesome 5 Free';
-		font-weight: 900;
-		float: right;
-	}
-
-	#main #accordionId .card .card-header .btn-header-link.collapsed {
-		background: #1a4c70;
-		color: #fff;
-	}
-
-	#main #accordionId .card .card-header .btn-header-link.collapsed:after {
-		content: "\f106";
-	}
-
-	#main #accordionId .card .collapsing {
-		background: #fff;
-		line-height: 30px;
-	}
-
-	#main #accordionId .card .collapse {
-		border: 0;
-	}
-
-	#main #accordionId .card .collapse.show {
-		background: #fff;
-		line-height: 30px;
-		color: #222;
-	}
-
-	.padding0 {
-		padding: 0 !important;
 	}
 }
