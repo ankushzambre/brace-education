@@ -1,4 +1,6 @@
 <?php
+
+$Template = file_get_contents("./email-template.html");
 $errorMSG = "";
 
 if (empty($_POST["name"])) {
@@ -7,10 +9,10 @@ if (empty($_POST["name"])) {
     $name = $_POST["name"];
 }
 
-if (empty($_POST["email"])) {
-    $errorMSG = "Email is required ";
+if (empty($_POST["phone"])) {
+    $errorMSG = "Phone is required";
 } else {
-    $email = $_POST["email"];
+    $phone = $_POST["phone"];
 }
 
 if (empty($_POST["message"])) {
@@ -19,31 +21,29 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-if (empty($_POST["terms"])) {
-    $errorMSG = "Terms is required ";
-} else {
-    $terms = $_POST["terms"];
+$variables = array();
+$variables['title'] = "New Enquiry Details";
+$variables['name'] = "Name: ".$name;
+$variables['contact'] =  "Contact: ".$phone;
+$variables['email'] = $_POST["message"] != "" ? "Message: ".$_POST["message"] : "Message: Not Available";
+$variables['date'] = "Message Received Date: ".date("d-m-Y");
+
+foreach($variables as $key => $value)
+{
+    $Template = str_replace('{{ '.$key.' }}', $value, $Template);
 }
 
-$EmailTo = "yourname@domain.com";
-$Subject = "New message from BRACE Education Academy landing page";
+$EmailTo = "ankush.ivision@gmail.com";
+$Subject = "New enquiry for BRACE Education Academy";
 
-$Body = "";
-$Body .= "Name: ";
-$Body .= $name;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $email;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $message;
-$Body .= "\n";
-$Body .= "Terms: ";
-$Body .= $terms;
-$Body .= "\n";
 
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$Headers  = "From:admin@braceacademy.in";
+$Headers .= "MIME-Version: 1.0\r\n";
+$Headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
+// send email
+$success = mail($EmailTo, $Subject, $Template, $Headers);
+// redirect to success page
 if ($success && $errorMSG == ""){
    echo "success";
 }else{

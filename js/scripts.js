@@ -268,13 +268,13 @@
 
     function csubmitForm() {
         var name = $("#cname").val();
-        var email = $("#cemail").val();
+        var phone = $("#cphone").val();
         var message = $("#cmessage").val();
         var terms = $("#cterms").val();
         $.ajax({
             type: "POST",
             url: "php/contactform-process.php",
-            data: "name=" + name + "&email=" + email + "&message=" + message + "&terms=" + terms,
+            data: "name=" + name + "&phone=" + phone + "&message=" + message + "&terms=" + terms,
             success: function (text) {
                 if (text == "success") {
                     cformSuccess();
