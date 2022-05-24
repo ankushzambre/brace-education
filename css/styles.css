@@ -13,9 +13,9 @@ html {
 	padding: 0 !important;
 }
 
-.paddingLeft40 {
+/* .paddingLeft40 {
 	padding-left: 40%;
-}
+} */
 
 /* Accordian design css starts*/
 #main {
@@ -25,6 +25,7 @@ html {
 #main #accordionId .card {
 	margin-bottom: 30px;
 	border: 0;
+	width: 100%;
 }
 
 #main #accordionId .card .card-header {
@@ -141,7 +142,9 @@ h1 {
 .form-1 h2,
 .form-3 h2 {
 	color: #fff;
-	font: 700 2.25rem/2.875rem "Montserrat", sans-serif;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	/* font: 700 2.25rem/2.875rem "Montserrat", sans-serif; */
 }
 
 h2 {
@@ -305,6 +308,9 @@ a:hover {
 .br-form-group {
 	position: relative;
 	margin-bottom: 1.25rem;
+	display: flex;
+	justify-content: center;
+
 }
 
 .br-form-group.has-error.has-danger {
@@ -859,7 +865,7 @@ screen and (-ms-high-contrast: none) {
 .header {
 	position: relative;
 	padding-top: 8rem;
-	padding-bottom: 40%;
+	padding-bottom: 8rem;
 	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8)) center center no-repeat;
 	background-size: cover;
 	text-align: center;
@@ -967,12 +973,13 @@ screen and (-ms-high-contrast: none) {
 
 
 .form-1 {
-	/* padding-top: 6rem;
-	padding-bottom: 6.25rem; */
+	padding-top: 8rem;
+	padding-bottom: 4rem;
 	background-color: #1a4c70;
 }
 
 .form-1 h2 {
+	font-size: 22px;
 	margin-bottom: 1.25rem;
 }
 
@@ -1016,6 +1023,7 @@ screen and (-ms-high-contrast: none) {
 .form-1 .form-control-submit-button:hover {
 	border: 0.125rem solid #ffedd0;
 	background-color: #ffedd0;
+	color: #1a4c70;
 }
 
 
@@ -1058,7 +1066,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .basic-2 h2 {
-	margin-bottom: 3.75rem;
+	margin-bottom: 1rem;
 	text-align: center;
 }
 
@@ -1319,10 +1327,10 @@ screen and (-ms-high-contrast: none) {
 }
 
 .br-cards .card {
-	max-width: 21rem;
-	margin-right: auto;
+	width: 21rem;
+	/* margin-right: auto; */
 	margin-bottom: 4rem;
-	margin-left: auto;
+	/* margin-left: auto; */
 	padding: 3rem 1.625rem 1.75rem 1.625rem;
 	border: none;
 	background-color: #fff;
@@ -1418,7 +1426,7 @@ screen and (-ms-high-contrast: none) {
 
 .basic-5 {
 	background-color: #fbf9f5;
-	padding-bottom: 5.125rem;
+	/* padding-bottom: 5.125rem; */
 }
 
 .basic-5 .text-container {
@@ -1727,6 +1735,11 @@ a:hover.back-to-top {
 	margin-top: 1.5rem;
 }
 
+.takeway-card-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 
 @media (min-width: 768px) {
 
@@ -1738,12 +1751,17 @@ a:hover.back-to-top {
 
 	.header {
 		padding-top: 9rem;
+		padding-bottom: 20rem;
 	}
 
 	.header h1 {
 		font-size: 4rem;
 		line-height: 4.875rem;
 		letter-spacing: -0.3px;
+	}
+
+	.form-1 h2 {
+		font-size: 32px;
 	}
 
 	.header .br-btn-solid-lg {
@@ -1771,6 +1789,7 @@ a:hover.back-to-top {
 		width: 41rem;
 		margin-right: auto;
 		margin-left: auto;
+		margin-bottom: 2rem;
 	}
 
 	.basic-2 .list-unstyled .bullet {
@@ -1966,10 +1985,10 @@ a:hover.back-to-top {
 		vertical-align: top;
 	}
 
-	.br-cards .card:nth-child(3n+2) {
+	/* .br-cards .card:nth-child(3n+2) {
 		margin-right: 2rem;
 		margin-left: 2rem;
-	}
+	} */
 
 	.slider-2 {
 		padding-bottom: 9rem;
@@ -2093,10 +2112,10 @@ a:hover.back-to-top {
 		width: 21rem;
 	}
 
-	.br-cards .card:nth-child(3n+2) {
+	/*.br-cards .card:nth-child(3n+2) {
 		margin-right: 2.875rem;
-		margin-left: 2.875rem;
-	}
+		margin-left: 2.875rem; 
+	}*/
 
 	.slider-2 .swiper-container {
 		width: 90%;
