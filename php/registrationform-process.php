@@ -27,11 +27,12 @@ foreach($variables as $key => $value)
     $Template = str_replace('{{ '.$key.' }}', $value, $Template);
 }
 
-$EmailTo = "ankush.ivision@gmail.com";
-$Subject = "New registration for BRACE Education Academy";
+$EmailTo = "admin@braceacademy.in";
+$Subject = "New registration for Brace Education Academy";
 
 
 $Headers  = "From:admin@braceacademy.in";
+$Headers .= "Cc: marketing@braceacademy.in";
 $Headers .= "MIME-Version: 1.0\r\n";
 $Headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 

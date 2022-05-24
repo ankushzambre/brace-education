@@ -98,6 +98,14 @@ html {
 	text-decoration: none;
 }
 
+.h5-font-weight {
+	font-weight: bold;
+}
+
+a.upsc:hover {
+	color: #c49324;
+}
+
 .height23px {
 	height: 23px;
 }
@@ -156,7 +164,6 @@ h3 {
 	color: #333;
 	font: 700 1.625rem/2.125rem "Montserrat", sans-serif;
 }
-
 
 .form-3 h3 {
 	color: #fff;
@@ -1074,6 +1081,10 @@ screen and (-ms-high-contrast: none) {
 	margin-bottom: 1.375rem;
 }
 
+.basic-3 .br-li-space-lg li {
+	margin-bottom: 1.375rem;
+}
+
 .basic-2 .list-unstyled .bullet {
 	margin-right: 0.625rem;
 	width: 2.125rem;
@@ -1211,6 +1222,7 @@ screen and (-ms-high-contrast: none) {
 	padding-top: 4rem;
 	padding-bottom: 3rem;
 	background-color: #fbf9f5;
+	text-align: center;
 }
 
 .basic-4 h2 {
@@ -1576,9 +1588,9 @@ screen and (-ms-high-contrast: none) {
 
 .footer {
 	padding-top: 4.75rem;
-	padding-bottom: 2rem;
+	/* padding-bottom: 2rem;
 	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8)), center center no-repeat;
-	background-size: cover;
+	background-size: cover; */
 }
 
 .footer .footer-col {
@@ -1971,6 +1983,7 @@ a:hover.back-to-top {
 	.basic-4 {
 		padding-top: 4.5rem;
 		padding-bottom: 3.5rem;
+		text-align: center;
 	}
 
 	.br-cards {
@@ -2095,6 +2108,12 @@ a:hover.back-to-top {
 		font-size: larger;
 	}
 
+	.basic-2 .text-container {
+		/* margin-top: 3.125rem; */
+		margin-left: 3.5rem;
+		font-size: larger;
+	}
+
 	.basic-2 .list-unstyled.first {
 		margin-right: 1.625rem;
 	}
@@ -2104,8 +2123,9 @@ a:hover.back-to-top {
 	}
 
 	.basic-3 .text-container {
-		margin-top: 2.5rem;
+		/* margin-top: 2.5rem; */
 		margin-right: 3.5rem;
+		font-size: larger;
 	}
 
 	.br-cards .card {
