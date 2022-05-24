@@ -1755,10 +1755,6 @@ a:hover.back-to-top {
 
 @media (min-width: 768px) {
 
-	.padding-left-5rem {
-		padding-left: 5rem;
-	}
-
 	.p-heading {
 		width: 85%;
 		margin-right: auto;
@@ -1840,6 +1836,9 @@ a:hover.back-to-top {
 
 
 @media (min-width: 992px) {
+	.padding-left-5rem {
+		padding-left: 5rem;
+	}
 
 	.navbar-custom {
 		padding: 2.125rem 1.5rem 2.125rem 2rem;
