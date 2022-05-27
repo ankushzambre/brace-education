@@ -103,7 +103,7 @@ html {
 }
 
 a.upsc:hover {
-	color: #c49324;
+	color: #c49624;
 }
 
 .height23px {
@@ -249,9 +249,9 @@ a:hover {
 }
 
 .br-btn-solid-lg:hover {
-	border: 0.125rem solid #333;
-	background-color: transparent;
-	color: #333;
+	border: 0.125rem solid #1a4c70;
+	background-color: #c49624;
+	color: #1a4c70;
 	text-decoration: none;
 }
 
@@ -279,7 +279,7 @@ a:hover {
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
 	border: 0.125rem solid #333;
 	border-radius: 2rem;
-	background-color: transparent;
+	background-color: #1a4c70;
 	color: #333;
 	font: 600 0.875rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
@@ -288,8 +288,8 @@ a:hover {
 
 .br-br-btn-outline-lg:hover {
 	border: 0.125rem solid #1a4c70;
-	background-color: #1a4c70;
-	color: #333;
+	background-color: #c49624;
+	color: #1a4c70;
 	text-decoration: none;
 }
 
@@ -929,12 +929,12 @@ screen and (-ms-high-contrast: none) {
 
 .header .br-br-btn-outline-lg {
 	border: 0.125rem solid #1a4c70;
-	color: #1a4c70;
+	color: #fff;
 }
 
 .header .br-br-btn-outline-lg:hover {
 	border: 0.125rem solid #1a4c70;
-	color: #fff;
+	color: #1a4c70;
 }
 
 .header .outer-container {
@@ -1588,6 +1588,10 @@ screen and (-ms-high-contrast: none) {
 
 .footer {
 	padding-top: 4.75rem;
+	background-color: #000;
+	color: #fff;
+	padding-left: 2rem;
+	padding-right: 2rem;
 	/* padding-bottom: 2rem;
 	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8)), center center no-repeat;
 	background-size: cover; */
@@ -1608,7 +1612,7 @@ screen and (-ms-high-contrast: none) {
 .footer h5,
 .footer p,
 .footer a {
-	color: #333;
+	color: #fff;
 }
 
 .footer .list-unstyled .fas {
@@ -1630,7 +1634,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .footer .fab:hover {
-	color: #1a4c70;
+	color: #c49624;
 }
 
 
@@ -1667,7 +1671,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	background-color: #f0a731;
+	background-color: #c49624;
 }
 
 .br-ex-header {
