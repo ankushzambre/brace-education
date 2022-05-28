@@ -2099,7 +2099,8 @@ a:hover.back-to-top {
 	}
 
 	.form-1 {
-		padding-top: 12rem;
+		/* padding-top: 12rem; */
+		padding-top: 10rem;
 	}
 
 	.form-1 .text-container {
