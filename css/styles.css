@@ -86,10 +86,6 @@ html {
 	top: 7px;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-	color: #222 !important;
-}
-
 .navbar-dark .navbar-toggler {
 	color: #222 !important;
 }
@@ -783,7 +779,7 @@ screen and (-ms-high-contrast: none) {
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-	color: #1a4c70;
+	color: #c49624;
 }
 
 .navbar-custom .dropdown:hover>.dropdown-menu {
@@ -1872,7 +1868,7 @@ a:hover.back-to-top {
 
 	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
 	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
-		color: #1a4c70;
+		color: #c49624;
 	}
 
 	.navbar-custom .dropdown-menu {
