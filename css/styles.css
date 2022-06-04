@@ -874,7 +874,7 @@ screen and (-ms-high-contrast: none) {
 .slider2 {
 	position: relative;
 	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-bottom: 2.2rem;
 	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8)) center center no-repeat;
 	background-size: cover;
 	text-align: center;
