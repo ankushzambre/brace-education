@@ -48,6 +48,17 @@
         }
     });
 
+    var videoSliderOne = new Swiper('.video-slider-1', {
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false
+        // },
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
 
     var imageSliderTwo = new Swiper('.image-slider-2', {
         autoplay: {

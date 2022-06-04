@@ -871,6 +871,15 @@ screen and (-ms-high-contrast: none) {
 	text-align: center;
 }
 
+.slider2 {
+	position: relative;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8)) center center no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
 .header .countdown {
 	margin-bottom: 0.5rem;
 	color: #fff;
