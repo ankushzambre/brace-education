@@ -987,6 +987,12 @@ screen and (-ms-high-contrast: none) {
 	background-color: #1a4c70;
 }
 
+.lp1-form-1 {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	background-color: #1a4c70;
+}
+
 .form-1 h2 {
 	font-size: 22px;
 	margin-bottom: 1.25rem;
