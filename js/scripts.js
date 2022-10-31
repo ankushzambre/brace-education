@@ -37,10 +37,10 @@
     });
 
     var imageSliderOne = new Swiper('.image-slider-1', {
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false
-        },
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false
+        // },
         loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
@@ -448,6 +448,16 @@ const translationsData = {
         "contact_details": "Contact Details",
         "contact_details1": "For registration enquiry please get in touch using the contact details below. For any enquiry use the form.",
         "your_message": "Your message",
+        "about_brace_education": "About Brace Education Academy",
+        "about_brace_education1": "Focuses on efficient learning method. It’s a one stop solution for smart education",
+        "about_brace_academy": "Brace Education Academy",
+        "about1": "About",
+        "about2": "",
+        "head_office": "Head Office",
+        "address1": "3rd Floor, Above Pashankar Honda Showroom, JM Road, Shivajinagar, Pune, Maharashtra 411005",
+        "regd_office": "Regd. Office",
+        "address2": "Global Port : Pune Banglore Highway Pashan Exit, Baner, Pune, Maharashtra 411045"
+
     },
     // Marathi translations
     "mr": {
@@ -504,7 +514,15 @@ const translationsData = {
         "whay_brace_4": "सध्याच्या पिढीची गरज समजते",
         "to_know_more_about_competitive_exam": "स्पर्धा परीक्षांबद्दल अधिक जाणून घेण्यासाठी",
         "contact_details": "संपर्कसाठी तपशील",
-        "contact_details1": "नोंदणी चौकशीसाठी कृपया खालील संपर्क तपशील वापरून संपर्क साधा. कोणत्याही चौकशीसाठी फॉर्म वापरा."
+        "contact_details1": "नोंदणी चौकशीसाठी कृपया खालील संपर्क तपशील वापरून संपर्क साधा. कोणत्याही चौकशीसाठी फॉर्म वापरा.",
+        "about_brace_academy": "ब्रेस एज्युकेशन अकादमी",
+        "about_brace_education1": "कार्यक्षम शिक्षण पद्धतीवर लक्ष केंद्रित करते. स्मार्ट शिक्षणासाठी हा एक उपाय आहे",
+        "about1": "",
+        "about2": "बद्दल",
+        "head_office": "मुख्य कार्यालय",
+        "address1": "3रा मजला, पाषाणकर होंडा शोरूमच्या वर, जेएम रोड, शिवाजीनगर, पुणे, महाराष्ट्र 411005",
+        "regd_office": "नोंदणी कार्यालय",
+        "address2": "ग्लोबल पोर्ट: पुणे बंगलोर महामार्ग पाषाण एक्झिट, बाणेर, पुणे, महाराष्ट्र ४१११०४५",
     }
 };
 
