@@ -388,3 +388,171 @@
     });
 
 })(jQuery);
+
+const defaultLocale = "en";
+let locale;
+const translationsData = {
+    // English translations
+    "en": {
+        "home": "Home",
+        "register": "Register",
+        "details": "Details",
+        "contact": "Contact",
+        "discover": "DISCOVER",
+        "tag_line": "First time in Pune..! < br > Smart Schooling Program",
+        "testimonials_coming_soon": "More testimonials coming soon",
+        "register_using_the_form": "Register Using The Form",
+        "register_using_the_form_sub1": "It's easy to register for the course, just fill out the form and click submit. Then you willbe registered for one of the best education academy",
+        "register_using_the_form_sub2": "Your information is required to complete the registration",
+        "name": "Name",
+        "email_address": "Email address",
+        "phone_number": "Phone number",
+        "feature": "FEATURED IN",
+        "key_features": "Key Features",
+        "smart_schooling_program": "Smart Schooling Program",
+        "personality_development": "Personality Development",
+        "ac_classroom": "AC Classrooms",
+        "outcome_based_reporting": "Outcome Based Reporting",
+        "counselling_and_guidance": "One-to-one Counselling and Guidance",
+        "coverage_topics": "Holistic Coverage of Topics",
+        "current_affair_classes": "Current Affair classes",
+        "expert_faculties": "Senior/Expert faculties",
+        "interaction_with_officers": "Interaction with officers",
+        "hostel_facility_available": "Hostel Facility available",
+        "smart_classroom": "Smart Classroom",
+        "bridging_the_gap": "Smart Schooling Program-Bridging the gap",
+        "school_academic_syllabus_completion": " School Academic syllabus completion",
+        "competitive_exam_coaching_experience": "Expert/Seniors faculties with competitive exam coaching experience",
+        "competitive_exams": "Foundation courses for various competitive exams-UPSC (CSE), Banking (RBI, SBI, IBPS, etc.)SSC, MPSC (Group B & C)",
+        "reading_habit": "Creating newspaper reading habit (Current affairs classes)",
+        "interview_and_soft_skills": "Personality grooming and training for the Interview and Soft skills",
+        "learning_new_things": "Instilling inquisitiveness for learning new things",
+        "better_growth": "Sowing seeds (Junior college level) early & deep enough for better growth.",
+        "individual_level": "Providing targated service tailored at an Individual level",
+        "appraisal_report": "360 degree appraisal report (Smart Outcome based reporting)",
+        "learning_method_online/offline": "Hybrid learning method-online/offline",
+        "grab_early_approach": "Start Early Grab Early approach",
+        "MPSC/UPSC_program": "MPSC/UPSC Program",
+        "visiting_faculties": "Visiting faculties from Delhi/Expert faculties.",
+        "interview_skills_personality_grooming": "Outcome based learning process-test series, interview skills and personality grooming",
+        "supporting_servies": "Supporting Servies- Targated based monitoring, Counselling and guidance.",
+        "quantitative_values_of_students": "Improving qualitative and quantitative values of students",
+        "quantitative_values_like_exam_scores": "Quantitative values like exam scores",
+        "conceptual_clarity": "Qualitative values like greater awareness focus, conceptual clarity",
+        "whay_brace": "Why Brace Education Academy",
+        "whay_brace_1": "Fundamental need in teenage is psychological understanding and providing them the right direction",
+        "whay_brace_2": "Crucial time for the kids to provide tailored guidance",
+        "whay_brace_3": "Counselling is the bedrock for creating harmonic environment",
+        "whay_brace_4": "Understands the need of present generation",
+        "to_know_more_about_competitive_exam": "To know more about competitive exams",
+        "contact_details": "Contact Details",
+        "contact_details1": "For registration enquiry please get in touch using the contact details below. For any enquiry use the form.",
+        "your_message": "Your message",
+    },
+    // Marathi translations
+    "mr": {
+        "home": "मुख्यपृष्ठ",
+        "register": "नोंदणी करा",
+        "details": "तपशील",
+        "contact": "संपर्क",
+        "discover": "शोधा",
+        "tag_line": "पुण्यात पहिल्यांदाच..!< br>स्मार्ट स्कूलिंग कार्यक्रम",
+        "testimonials_coming_soon": "अधिक प्रशस्तिपत्रे लवकरच येत आहेत...",
+        "register_using_the_form": "फॉर्म वापरून नोंदणी करा",
+        "register_using_the_form_sub1": "कोर्ससाठी नोंदणी करणे सोपे आहे, फक्त फॉर्म भरा आणि सबमिट करा क्लिक करा. मग तुमची नोंदणी सर्वोत्तम शिक्षण अकादमीसाठी केली जाईल",
+        "register_using_the_form_sub2": "नोंदणी पूर्ण करण्यासाठी तुमची माहिती आवश्यक आहे",
+        "name": "नाव",
+        "email_address": "ईमेल",
+        "phone_number": "फोन नंबर",
+        "your_message": "तुमचा निरोप",
+        "feature": "वैशिष्ट्यपूर्ण",
+        "key_features": "महत्वाची वैशिष्टे",
+        "smart_schooling_program": "स्मार्ट स्कूलिंग कार्यक्रम",
+        "personality_development": "व्यक्तिमत्व विकास",
+        "ac_classroom": "एसी वर्गखोल्या",
+        "outcome_based_reporting": "परिणाम आधारित अहवाल",
+        "counselling_and_guidance": "वैयक्तिक समुपदेशन आणि मार्गदर्शन",
+        "coverage_topics": "विषयांचे समग्र कव्हरेज",
+        "current_affair_classes": "चालू घडामोडींचे वर्ग",
+        "expert_faculties": "वरिष्ठ/तज्ञ शिक्षक",
+        "interaction_with_officers": "अधिकाऱ्यांशी संवाद",
+        "hostel_facility_available": "वसतिगृहाची सुविधा उपलब्ध",
+        "smart_classroom": "स्मार्ट वर्ग",
+        "bridging_the_gap": "स्मार्ट स्कूलिंग कार्यक्रम - अंतर भरून काढणे",
+        "school_academic_syllabus_completion": "शालेय शैक्षणिक अभ्यासक्रम पूर्ण",
+        "competitive_exam_coaching_experience": "स्पर्धात्मक परीक्षा प्रशिक्षण अनुभवासह तज्ञ/वरिष्ठ संकाय",
+        "competitive_exams": "विविध स्पर्धा परीक्षांसाठी पायाभूत अभ्यासक्रम- UPSC (CSE), बँकिंग (RBI, SBI, IBPS इ.) SSC, MPSC (गट B आणि C)",
+        "reading_habit": "वृत्तपत्र वाचनाची सवय निर्माण करणे (चालू घडामोडी वर्ग)",
+        "interview_and_soft_skills": "मुलाखत आणि सॉफ्ट स्किल्ससाठी व्यक्तिमत्व विकास आणि प्रशिक्षण",
+        "learning_new_things": "नवीन गोष्टी शिकण्यासाठी जिज्ञासा निर्माण करणे",
+        "better_growth": "चांगल्या वाढीसाठी बियाणे पेरणे (कनिष्ठ महाविद्यालयीन स्तर) लवकर आणि पुरेसे खोल.",
+        "individual_level": "वैयक्तिक स्तरावर तयार केलेली लक्ष्यित सेवा प्रदान करणे",
+        "appraisal_report": "360 अंश मूल्यांकन अहवाल (स्मार्ट परिणाम आधारित अहवाल)",
+        "learning_method_online/offline": "संकरित शिक्षण पद्धत-ऑनलाइन/ऑफलाइन",
+        "grab_early_approach": "लवकर प्रारंभ करा लवकर पकड शिक्षण पध्दत",
+        "MPSC/UPSC_program": "MPSC/UPSC कार्यक्रम",
+        "visiting_faculties": "दिल्लीतील तज्ञाकडून मार्गदर्शन व भेट",
+        "interview_skills_personality_grooming": "परिणाम आधारित शिक्षण प्रक्रिया सराव चाचणी मालिका, मुलाखत कौशल्ये आणि व्यक्तिमत्व विकास",
+        "supporting_servies": "सहाय्यक सेवा - लक्षकेंद्रित समुपदेशन आणि मार्गदर्शन",
+        "quantitative_values_of_students": "विद्यार्थ्याची गुणात्मक आणि परिमाणात्मक मूल्ये सुधारणे.",
+        "quantitative_values_like_exam_scores": "परिमाणवाचक मूल्ये जसे परीक्षेचे गुण",
+        "conceptual_clarity": "वैचारिक स्पष्टता यासारखी गुणात्मक मूल्ये",
+        "whay_brace": "ब्रेस एज्युकेशन अकादमी का ?",
+        "whay_brace_1": "किशोरवयीन मुलांमध्ये मूलभूत गरज म्हणजे मानसिक समज आणि त्यांना योग्य दिशा देणे",
+        "whay_brace_2": "मुलांसाठी योग्य मार्गदर्शन प्रदान करण्यासाठी महत्त्वपूर्ण वेळ",
+        "whay_brace_3": "समुपदेशन हा सुसंवादी वातावरण निर्माण करण्याचा पाया आहे",
+        "whay_brace_4": "सध्याच्या पिढीची गरज समजते",
+        "to_know_more_about_competitive_exam": "स्पर्धा परीक्षांबद्दल अधिक जाणून घेण्यासाठी",
+        "contact_details": "संपर्कसाठी तपशील",
+        "contact_details1": "नोंदणी चौकशीसाठी कृपया खालील संपर्क तपशील वापरून संपर्क साधा. कोणत्याही चौकशीसाठी फॉर्म वापरा."
+    }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Translate the page to the default locale
+    setLocale(defaultLocale);
+    bindLocaleSwitcher(defaultLocale);
+});
+// Load translations for the given locale and translate
+// the page to this locale
+async function setLocale(newLocale) {
+    if (newLocale === locale) return;
+    const newTranslations =
+        await fetchTranslationsFor(newLocale);
+    locale = newLocale;
+    translations = newTranslations;
+    translatePage();
+}
+// Retrieve translations JSON object for the given
+// locale over the network
+async function fetchTranslationsFor(newLocale) {
+    // const response = await fetch(`/lang/language.json`);
+    // return await response.json();
+    return translationsData[newLocale];
+
+}
+// Replace the inner text of each element that has a
+// data-i18n-key attribute with the translation corresponding
+// to its data-i18n-key
+function translatePage() {
+    document
+        .querySelectorAll("[data-i18n-key]")
+        .forEach(translateElement);
+}
+// Replace the inner text of the given HTML element
+// with the translation in the active locale,
+// corresponding to the element's data-i18n-key
+function translateElement(element) {
+    const key = element.getAttribute("data-i18n-key");
+    const translation = translations[key];
+    element.innerText = translation;
+}
+function bindLocaleSwitcher(initialValue) {
+    const switcher =
+        document.querySelector("[data-i18n-switcher]");
+    switcher.value = initialValue;
+    switcher.onchange = (e) => {
+        // Set the locale to the selected option[value]
+        setLocale(e.target.value);
+    };
+}

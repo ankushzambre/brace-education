@@ -50,17 +50,24 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll upsc" href="#header">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll upsc" href="#register">Register <span
+                    <a class="nav-link page-scroll upsc" href="#header" data-i18n-key="home">Home <span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll upsc" href="#description">Details</a>
+                    <a class="nav-link page-scroll upsc" href="#register" data-i18n-key="register">Register <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll upsc" href="#contact">Contact</a>
+                    <a class="nav-link page-scroll upsc" href="#description" data-i18n-key="details">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll upsc" href="#contact" data-i18n-key="contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <select data-i18n-switcher class="locale-switcher" style="padding-right: 20px;">
+                        <option value="en">English</option>
+                        <option value="mr">मराठी</option>
+                    </select>
                 </li>
             </ul>
             <span class="nav-item social-icons">
@@ -98,8 +105,9 @@
                         </div>
                         <h2 style="color:#1a4c70;">BRACE Education Academy</h2>
                         <p class="p-large" style="color: #1a4c70;">First time in Pune..!<br>Smart Schooling Program</p>
-                        <a class="br-btn-solid-lg page-scroll" href="#register">REGISTER</a>
-                        <a class="br-br-btn-outline-lg page-scroll" href="#description">DISCOVER</a>
+                        <a class="br-btn-solid-lg page-scroll" href="#register" data-i18n-key="register">REGISTER</a>
+                        <a class="br-br-btn-outline-lg page-scroll" href="#description"
+                            data-i18n-key="discover">DISCOVER</a>
                     </div>
                 </div>
             </div>
@@ -158,7 +166,8 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="container2" style="padding-top: 20%;">
-                            <h2 style="color:#1a4c70;">More testimonials coming soon</h2>
+                            <h2 style="color:#1a4c70;" data-i18n-key="testimonials_coming_soon">More testimonials coming
+                                soon</h2>
                         </div>
                     </div>
                     <!-- <div class="swiper-slide">
@@ -186,13 +195,15 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Register Using The Form</h2>
-                        <p>It's easy to register for the course, just fill out the form and click submit. Then you will
+                        <h2 data-i18n-key="register_using_the_form">Register Using The Form</h2>
+                        <p data-i18n-key="register_using_the_form_sub1">It's easy to register for the course, just fill
+                            out the form and click submit. Then you will
                             be registered for one of the best education academy</p>
                         <ul class="list-unstyled br-li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body"><strong>Your information</strong> is required to complete the
+                                <div class="media-body" data-i18n-key="register_using_the_form_sub2"><strong>Your
+                                        information</strong> is required to complete the
                                     registration</div>
                             </li>
                         </ul>
@@ -204,21 +215,25 @@
                         <form id="registrationForm" data-toggle="validator" data-focus="false">
                             <div class="br-form-group">
                                 <input type="text" class="br-form-control-input" id="rname" name="rname" required>
-                                <label class="br-label-control control-label" for="rname">Name</label>
+                                <label class="br-label-control control-label" for="rname"
+                                    data-i18n-key="name">Name</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="br-form-group">
                                 <input type="email" class="br-form-control-input" id="remail" name="remail">
-                                <label class="br-label-control" for="remail">Email address</label>
+                                <label class="br-label-control" for="remail" data-i18n-key="email_address">Email
+                                    address</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="br-form-group">
                                 <input type="text" class="br-form-control-input" id="rphone" name="rphone" required>
-                                <label class="br-label-control control-label" for="rphone">Phone number</label>
+                                <label class="br-label-control control-label" for="rphone"
+                                    data-i18n-key="phone_number">Phone number</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="br-form-group" style="display: flex;">
-                                <button type="submit" class="form-control-submit-button">REGISTER</button>
+                                <button type="submit" class="form-control-submit-button"
+                                    data-i18n-key="register">REGISTER</button>
                             </div>
                             <div class="form-message">
                                 <div id="rmsgSubmit" class="h3 text-center hidden"></div>
@@ -234,7 +249,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-large" style="font-weight: bold;">FEATURED IN</p>
+                    <p class="p-large" style="font-weight: bold;" data-i18n-key="feature">FEATURED IN</p>
                     <div class="slider-container">
                         <div class="swiper-container image-slider-2">
                             <div class="swiper-wrapper">
@@ -270,18 +285,38 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Key Features</h2>
+                        <h2 data-i18n-key="key_features" data-i18n-key="key_features">Key Features</h2>
                         <ul class="list-unstyled second">
-                            <li> <i class="fas fa-square theme-color"></i> Personality Development</li>
-                            <li> <i class="fas fa-square theme-color"></i> AC Classrooms</li>
-                            <li> <i class="fas fa-square theme-color"></i> Outcome Based Reporting</li>
-                            <li> <i class="fas fa-square theme-color"></i> One-to-one Counselling and Guidance</li>
-                            <li> <i class="fas fa-square theme-color"></i> Holistic Coverage of Topics</li>
-                            <li> <i class="fas fa-square theme-color"></i> Current Affair classes</li>
-                            <li> <i class="fas fa-square theme-color"></i> Senior/Expert faculties</li>
-                            <li> <i class="fas fa-square theme-color"></i> Interaction with officers</li>
-                            <li> <i class="fas fa-square theme-color"></i> Hostel Facility available</li>
-                            <li> <i class="fas fa-square theme-color"></i> Smart Classroom</li>
+                            <li> <i class="fas fa-square theme-color"></i>
+                                <label data-i18n-key="personality_development"></label>
+                            </li>
+                            <li> <i class="fas fa-square theme-color"></i>
+                                <label data-i18n-key="ac_classroom"></label>
+                            </li>
+                            <li> <i class="fas fa-square theme-color"></i>
+                                <label data-i18n-key="outcome_based_reporting"></label>
+                            </li>
+                            <li> <i class="fas fa-square theme-color"></i>
+                                <label data-i18n-key="counselling_and_guidance"></label>
+                            </li>
+                            <li> <i class="fas fa-square theme-color"></i>
+                                <label data-i18n-key="coverage_topics"></label>
+                            </li>
+                            <li> <i class="fas fa-square theme-color"></i>
+                                <label data-i18n-key="current_affair_classes"></label>
+                            </li>
+                            <li> <i class="fas fa-square theme-color"></i>
+                                <label data-i18n-key="expert_faculties"></label>
+                            </li>
+                            <li> <i class="fas fa-square theme-color"></i>
+                                <label data-i18n-key="interaction_with_officers"></label>
+                            </li>
+                            <li> <i class="fas fa-square theme-color"></i>
+                                <label data-i18n-key="hostel_facility_available"></label>
+                            </li>
+                            <li> <i class="fas fa-square theme-color"></i>
+                                <label data-i18n-key="smart_classroom"></label>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -298,67 +333,66 @@
             </div> -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Smart Schooling Program</h2>
+                    <h2 data-i18n-key="smart_schooling_program">Smart Schooling Program</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <div class="text-container">
                         <ul class="list-unstyled br-li-space-lg second">
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Smart Schooling Program-Bridging the gap
+                                <label data-i18n-key="bridging_the_gap"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                School Academic syllabus completion
+                                <label data-i18n-key="school_academic_syllabus_completion"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Expert/Seniors faculties with competitive exam coaching experience
+                                <label data-i18n-key="competitive_exam_coaching_experience"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Foundation courses for various competitive exams-UPSC (CSE), Banking (RBI, SBI, IBPS
-                                etc.)
-                                SSC, MPSC (Group B & C)
+                                <label data-i18n-key="competitive_exams"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Creating newspaper reading habit (Current affairs classes)
+                                <label data-i18n-key="reading_habit"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Personality grooming and training for the Interview and Soft skills
+                                <label data-i18n-key="interview_and_soft_skills"></label>
+
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Instilling inquisitiveness for learning new things
+                                <label data-i18n-key="learning_new_things"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Sowing seeds (Junior college level) early & deep enough for better growth.
+                                <label data-i18n-key="better_growth"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Providing targated service tailored at an Individual level
+                                <label data-i18n-key="individual_level"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"> </i>
-                                360 degree appraisal report (Smart Outcome based reporting)
+                                <label data-i18n-key="appraisal_report"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"> </i>
-                                Hybrid learning method-online/offline
+                                <label data-i18n-key="learning_method_online"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"> </i>
-                                Start Early Grab Early approach
+                                <label data-i18n-key="grab_early_approach"></label>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <!-- <div class="col-lg-6">
                     <div class="text-container">
                         <ul class="list-unstyled br-li-space-lg second">
                             <li>
@@ -416,51 +450,51 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="container" style="padding-top: 2%;">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>MPSC/UPSC Program</h2>
+                    <h2 data-i18n-key="MPSC/UPSC_program"></h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <div class="text-container">
                         <ul class="list-unstyled br-li-space-lg second">
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Visiting faculties from Delhi/Expert faculties.
+                                <label data-i18n-key="visiting_faculties"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Outcome based learning process-test series, interview skills and personality grooming
+                                <label data-i18n-key="interview_skills_personality_grooming"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Supporting Servies- Targated based monitoring, Counselling and guidance.
+                                <label data-i18n-key="supporting_servies"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Hybrid method-online/offline
+                                <label data-i18n-key="learning_method_online"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Improving qualitative and quantitative values of students
+                                <label data-i18n-key="quantitative_values_of_students"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Quantitative values like exam scores
+                                <label data-i18n-key="quantitative_values_like_exam_scores"></label>
                             </li>
                             <li>
                                 <i class="fas fa-square theme-color"></i>
-                                Qualitative values like greater awareness focus, conceptual clarity
+                                <label data-i18n-key="conceptual_clarity"></label>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <!-- <div class="col-lg-6">
                     <div class="text-container">
                         <ul class="list-unstyled br-li-space-lg second">
                             <li>
@@ -493,7 +527,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -503,27 +537,26 @@
         <div class="container">
             <div class="row padding-left-5rem">
                 <div class="col-lg-6">
-                    <h2> Why Brace Education Academy</h2>
+                    <h2 data-i18n-key="whay_brace"></h2>
                     <div class="row">
                         <div class="col-lg-10">
                             <div class="text-container">
                                 <ul class="list-unstyled br-li-space-lg second">
                                     <li>
                                         <i class=" fas fa-square theme-color"></i>
-                                        Fundamental need in teenage is psychological understanding and providing
-                                        them the right direction
+                                        <label data-i18n-key="whay_brace_1"></label>
                                     </li>
                                     <li>
                                         <i class="fas fa-square theme-color"></i>
-                                        Crucial time for the kids to provide tailored guidance
+                                        <label data-i18n-key="whay_brace_2"></label>
                                     </li>
                                     <li>
                                         <i class="fas fa-square theme-color"></i>
-                                        Counselling is the bedrock for creating harmonic environment
+                                        <label data-i18n-key="whay_brace_3"></label>
                                     </li>
                                     <li>
                                         <i class="fas fa-square theme-color"></i>
-                                        Understands the need of present generation
+                                        <label data-i18n-key="whay_brace_4"></label>
                                     </li>
                                 </ul>
                             </div>
@@ -542,7 +575,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>To know more about competitive exams</h2>
+                    <h2 data-i18n-key="to_know_more_about_competitive_exam"></h2>
                 </div>
             </div>
             <div class="row">
@@ -810,9 +843,8 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container" style="padding-top: 10%;">
-                        <h2>Contact Details</h2>
-                        <p>For registration enquiry please get in touch using the contact details below. For any
-                            enquiry use the form.</p>
+                        <h2 data-i18n-key="contact_details"></h2>
+                        <p data-i18n-key="contact_details1"></p>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -820,17 +852,18 @@
                         <form id="contactForm" data-toggle="validator" data-focus="false">
                             <div class="br-form-group">
                                 <input type="text" class="br-form-control-input" id="cname" required>
-                                <label class="br-label-control control-label" for="cname">Name</label>
+                                <label class="br-label-control control-label" for="cname" data-i18n-key="name"></label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="br-form-group">
                                 <input type="number" class="br-form-control-input" id="cphone" required>
-                                <label class="br-label-control control-label" for="cphone">Phone number</label>
+                                <label class="br-label-control control-label" for="cphone"
+                                    data-i18n-key="phone_number"></label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="br-form-group">
                                 <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                                <label class="br-label-control" for="cmessage">Your message</label>
+                                <label class="br-label-control" for="cmessage" data-i18n-key="your_message"></label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="br-form-group" style="display: flex;">
