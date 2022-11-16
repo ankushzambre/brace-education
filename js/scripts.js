@@ -573,4 +573,16 @@ function bindLocaleSwitcher(initialValue) {
         // Set the locale to the selected option[value]
         setLocale(e.target.value);
     };
+
+    /* TESTIMONIALS jQuery START */
+    /* Demo purposes only */
+    $(".hover").mouseleave(
+        function () {
+            $(this).removeClass("hover");
+        }
+    );
+
+
+    /* TESTIMONIALS jQuery END */
+
 }
