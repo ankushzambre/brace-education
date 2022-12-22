@@ -528,6 +528,7 @@ const translationsData = {
 
 document.addEventListener("DOMContentLoaded", () => {
     // Translate the page to the default locale
+    console.log("test addEventListener")
     setLocale(defaultLocale);
     bindLocaleSwitcher(defaultLocale);
 });
@@ -546,6 +547,7 @@ async function setLocale(newLocale) {
 async function fetchTranslationsFor(newLocale) {
     // const response = await fetch(`/lang/language.json`);
     // return await response.json();
+    console.log(newLocale)
     return translationsData[newLocale];
 
 }
