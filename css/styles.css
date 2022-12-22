@@ -2639,7 +2639,7 @@ input[type=checkbox] {
 	.menu {
 		display: none;
 		position: absolute;
-		/* background-color: teal; */
+		background-color: teal;
 		right: 0;
 		left: 0;
 		text-align: center;
@@ -2648,7 +2648,7 @@ input[type=checkbox] {
 
 	.menu li:hover {
 		display: inline-block;
-		/* background-color: #4c9e9e; */
+		background-color: #4c9e9e;
 		transition: 0.3s ease;
 	}
 

@@ -33,76 +33,66 @@
         </div>
     </div>
 
-    <!-- 
-        https://phrase.com/blog/posts/step-step-guide-javascript-localization/ 
-        need to check the menubar open in mobile view broken
-        change the keys  data-i18n-key in index file
-    -->
-    <div class="topbar">
-        <select data-i18n-switcher class="language">
-            <option value="en"> English </option>
-            <option value="mr"> Marathi </option>
-        </select>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top navbar-border">
+        <a class="navbar-brand logo-image" href="index.html">
+            <img src="images/BraceLogo.svg" height="100px" width="auto" alt="alternative">
+        </a>
 
-    <nav class="navbar">
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
 
-        <!-- LOGO -->
-
-        <div class="logo">
-            <img src="images/BraceLogo.svg" alt="alternative">
-        </div>
-
-        <!-- NAVIGATION MENU -->
-
-        <ul class="nav-links">
-            <!-- NAVIGATION MENUS -->
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <div class="menu">
-                <li><a class="nav-link page-scroll upsc" href="#header" data-i18n-key="home">Home <span
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll upsc" href="#header" data-i18n-key="home">Home <span
                             class="sr-only">(current)</span></a>
                 </li>
-                <li><a class="nav-link page-scroll upsc" href="#register" data-i18n-key="register">Register <span
-                            class="sr-only">(current)</span></a></li>
-                <li><a class="nav-link page-scroll upsc" href="#description" data-i18n-key="details">Details</a></li>
-                <li><a class="nav-link page-scroll upsc" href="#contact" data-i18n-key="contact">Contact</a></li>
-
-                <!-- DROPDOWN MENU -->
-                <!-- <li class="services">
-                    <a href="/">Services</a>
-                    <ul class="dropdown">
-                        <li><a href="/">Dropdown 1 </a></li>
-                        <li><a href="/">Dropdown 2</a></li>
-                        <li><a href="/">Dropdown 2</a></li>
-                        <li><a href="/">Dropdown 3</a></li>
-                        <li><a href="/">Dropdown 4</a></li>
-                    </ul>
-                </li> -->
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="https://www.facebook.com/profile.php?id=100080490942002" target="_blank">
-                            <img src="images/facebook.png" class="height23px" width="auto" alt="alternative">
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="https://youtube.com/channel/UCfL8PiexdCpB5naPxmwzAbA" target="_blank">
-                            <img src="images/youtube.png" class="height23px" width="auto" alt="alternative">
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="https://www.instagram.com/braceedu/" target="_blank">
-                            <img src="images/instagram.png" class="height23px" width="auto" alt="alternative">
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="https://www.linkedin.com/in/brace-education-academy-032040239" target="_blank">
-                            <img src="images/linkedin.png" class="height23px" width="auto" alt="alternative">
-                        </a>
-                    </span>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll upsc" href="#register" data-i18n-key="register">Register <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll upsc" href="#description" data-i18n-key="details">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll upsc" href="#contact" data-i18n-key="contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <select data-i18n-switcher class="locale-switcher" style="padding-right: 20px;">
+                        <option value="en">English</option>
+                        <option value="mr">मराठी</option>
+                    </select>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com/profile.php?id=100080490942002" target="_blank">
+                        <img src="images/facebook.png" class="height23px" width="auto" alt="alternative">
+                    </a>
                 </span>
-            </div>
-        </ul>
+                <span class="fa-stack">
+                    <a href="https://youtube.com/channel/UCfL8PiexdCpB5naPxmwzAbA" target="_blank">
+                        <img src="images/youtube.png" class="height23px" width="auto" alt="alternative">
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://www.instagram.com/braceedu/" target="_blank">
+                        <img src="images/instagram.png" class="height23px" width="auto" alt="alternative">
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://www.linkedin.com/in/brace-education-academy-032040239" target="_blank">
+                        <img src="images/linkedin.png" class="height23px" width="auto" alt="alternative">
+                    </a>
+                </span>
+            </span>
+        </div>
     </nav>
 
     <header id="header" class="header">
@@ -155,48 +145,69 @@
     <div class="outer-container slider2" style="margin-top: 80px;">
         <p style="color:#1a4c70; font-size: xx-large; font-weight: bolder;">Expert's Opinion</p>
     </div>
-    <div class="outer-container slider2">
-        <div class="slider-container">
-            <div class="swiper-container image-slider-1">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <!-- <div class="container2"> -->
-                        <img class="img-fluid" width="80%" src="images/Raviteja.jpg" alt="alternative">
-                        <!-- </div> -->
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- <div class="container2"> -->
-                        <img class="img-fluid" width="80%" src="images/akash_p_reivew.jpg" alt="alternative">
-                        <!-- </div> -->
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- <div class="container2"> -->
-                        <img class="img-fluid" width="80%" src="images/Vinod_Meena_reivew.jpg" alt="alternative">
-                        <!-- </div> -->
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="container2" style="padding-top: 20%;">
-                            <h2 style="color:#1a4c70;">More testimonials coming soon</h2>
+    <section class="testimonial text-center">
+        <div class="container">
+
+
+            <div id="testimonial4"
+                class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
+                data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="images/Raviteja_1.jpg" class="img-circle img-responsive" />
+                            <p>I have cleared UPSC exams such as CSE, IFoS, IES multiple times in
+                                2013,2015 & 2016. Brace Education Academy started by my friend Porus
+                                Rajpurohit to address the major problem of aspirants. The program allows the
+                                kid to prepare for competitive exams such as UPSC, Banking, SSC, Defense after
+                                10th class only. This will help the kid to start preparation early and to save time
+                                during later period in terms of attempts.
+
+                                I have full faith in Porus and believe that under his able right guidance and
+                                counselling it is possible to get your desired government job at very young age.
+                            </p>
+                            <h4>B Raviteja</h4>
+                            <h4>Post-IRS</h4>
+                            <h4>Designation- Deputy commissioner</h4>
                         </div>
                     </div>
-                    <!-- <div class="swiper-slide">
-                        <img class="img-fluid" width="80%" src="images/Slide1.jpg" alt="alternative">
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="images/akash_p_reivew_1.jpg" class="img-circle img-responsive" />
+                            <p>I have secured a rank in the UPSC exam in my first attempt. This was possible
+                                due to my early start of preparation during school time. Porus sir started this
+                                unique program - “Smart Schooling Program”. It helps you to start preparing for
+                                government jobs after 10th along with Boards education plus additional
+                                personality development courses. Porus sir truly understands the competitive
+                                environment, so I believe it will provide the right support,guidance and training
+                                which is needed at an early stage, without wasting a number of attempts and
+                                time. Kudos to this unique program. </p>
+                            <h4>Akash Purohit</h4>
+                            <h4>IRS (IT)- Dy. Commissioner of Income Tax</h4>
+                            <h4>UPSC AIR 216 (2016)</h4>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img class="img-fluid" width="80%" src="images/Slide2.jpg" alt="alternative">
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <!-- <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /> -->
+                            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. </p> -->
+                            <p><br><br><br></p>
+                            <h4>More Comming Soon...</h4>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img class="img-fluid" width="80%" src="images/Slide3.jpg" alt="alternative">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="img-fluid" width="80%" src="images/Slide4.jpg" alt="alternative">
-                    </div> -->
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Registration -->
     <div id="register" class="form-1">
@@ -211,7 +222,7 @@
                         <ul class="list-unstyled br-li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div data-i18n-key="register_using_the_form_sub2" class="media-body"><strong>Your
+                                <div class="media-body" data-i18n-key="register_using_the_form_sub2"><strong>Your
                                         information</strong> is required to complete the
                                     registration</div>
                             </li>
@@ -229,9 +240,9 @@
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="br-form-group">
-                                <input type="email" class="br-form-control-input" id="remail" name="remail"
-                                    data-i18n-key="email_address">
-                                <label class="br-label-control" for="remail">Email address</label>
+                                <input type="email" class="br-form-control-input" id="remail" name="remail">
+                                <label class="br-label-control" for="remail" data-i18n-key="email_address">Email
+                                    address</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="br-form-group">
@@ -294,7 +305,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2 data-i18n-key="key_features">Key Features</h2>
+                        <h2 data-i18n-key="key_features" data-i18n-key="key_features">Key Features</h2>
                         <ul class="list-unstyled second">
                             <li> <i class="fas fa-square theme-color"></i>
                                 <label data-i18n-key="personality_development"></label>
@@ -401,65 +412,6 @@
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="col-lg-6">
-                    <div class="text-container">
-                        <ul class="list-unstyled br-li-space-lg second">
-                            <li>
-                                <i class="fas fa-square theme-color"></i>
-                                स्मार्ट शालेय शिक्षण कार्यक्रम.( Bridging the gap)
-                            </li>
-                            <li>
-                                <i class="fas fa-square theme-color"></i>
-                                शालेय शैक्षणिक अभ्यासक्रम पूर्ण करणे (इयत्ता ११वी आणि १२वी)
-                            </li>
-                            <li>
-                                <i class="fas fa-square theme-color"></i>
-                                अनुभवी तज्ञ / वरिष्ट प्राध्यापकाकडून मार्गदर्शन
-                            </li>
-                            <li>
-                                <i class="fas fa-square theme-color"> </i>
-                                अनुभवीतज्ञ / वरिष्ठ प्राध्यापकाकडून स्पर्धात्मक परीक्षा प्रशिक्षण
-                            </li>
-                            <li>
-                                <i class="fas fa-square theme-color"> </i>
-                                विविध स्पर्धा परीक्षांसाठी पायाभूत अभ्यासक्रम जसे की,
-                                UPSC (CSE) बँकिंग (RBI, SBI, IBPS इ.). एसएससी, एमपीएससी (गट ब आणि क)
-                            </li>
-                            <li>
-                                <i class="fas fa-square theme-color"> </i>
-                                वृत्तपत्र वाचनाची सवय निर्माण करणे (चालू घडामोडींचे वर्ग)
-                            </li>
-                            <li>
-                                <i class="fas fa-square theme-color"> </i>
-                                व्यक्तिमत्व विकास आणि मुलाखत प्रशिक्षण आणि सॉफ्ट स्किल्ससाठी प्रशिक्षण,
-                            </li>
-                            <li>
-                                <i class="fas fa-square theme-color"> </i>
-                                नवीन गोष्टी शिकण्यासाठी जिज्ञासा निर्माण करणे.
-                            </li>
-                            <li>
-                                <i class="fas fa-square theme-color"> </i>
-                                कनिष्ठ महाविद्यालयीन स्तरावरच आधिक चांगल्या पद्धतीेचे सखोल ज्ञान देणे.
-                            </li>
-                            <li>
-                                <i class="fas fa-square theme-color"> </i>
-                                वैयक्तिक स्तरावर तयार केलेली लक्ष्यित सेवा प्रदान करणे.
-                            </li>
-                            <li>
-                                <i class="fas fa-square theme-color"> </i>
-                                360 अंश मूल्यांकन अहवाल (स्मार्ट परिणाम आधारित अहवाल)
-                            </li>
-                            <li>
-                                <i class="fas fa-square theme-color"> </i>
-                                संकरित शिक्षण पद्धत - ऑनलाइन / ऑफलाइन
-                            </li>
-                            <li>
-                                <i class="fas fa-square theme-color"> </i>
-                                त्वरा करा आणि संधीचा लाभ घ्या.
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
             </div>
         </div>
         <div class="container" style="padding-top: 2%;">
@@ -810,24 +762,19 @@
         <!-- <img src="images/apple_store.png" alt="apple_store"> -->
         <div class="container">
             <div class="row">
-                <div class="d-sm-flex align-items-center justify-content-between py-2 space-y-2 space-y-">
-                    <div class="col-12 col-sm-3">
-                        <a href=" https://clplenord.page.link/r4RN">
-                            <img src="images/play_store.png" alt="play_store" class=" app_link_img">
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-3 my-3 my-sm-0">
-                        <h1 class="jambotron_heading text-white">Download App</h1>
-                    </div>
-                    <div class="col-12 col-sm-3">
-                        <a href="https://apps.apple.com/in/app/myinstitute/id1472483563">
-                            <img src="images/apple_store.png" alt="apple_store" class=" app_link_img">
-                        </a>
-                    </div>
+                <div class="col-lg-8">
+                    <a href=" https://clplenord.page.link/r4RN"><img src="images/play_store.png" height="15%"
+                            alt="play_store"></a>
+                    <a href="https://apps.apple.com/in/app/myinstitute/id1472483563"><img src="images/apple_store.png"
+                            height="15%" alt="apple_store"></a>
+                </div>
+                <div class="col-lg-4">
+                    <h1 style="color: white; font-weight:bold; padding-top: 10%;">Download App</h1>
                 </div>
             </div>
         </div>
     </div>
+
 
     <div id="date" class="basic-5">
         <iframe
@@ -850,20 +797,18 @@
                         <form id="contactForm" data-toggle="validator" data-focus="false">
                             <div class="br-form-group">
                                 <input type="text" class="br-form-control-input" id="cname" required>
-                                <label class="br-label-control control-label" for="cname"
-                                    data-i18n-key="name">Name</label>
+                                <label class="br-label-control control-label" for="cname" data-i18n-key="name"></label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="br-form-group">
                                 <input type="number" class="br-form-control-input" id="cphone" required>
                                 <label class="br-label-control control-label" for="cphone"
-                                    data-i18n-key="phone_number">Phone number</label>
+                                    data-i18n-key="phone_number"></label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="br-form-group">
                                 <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                                <label class="br-label-control" for="cmessage" data-i18n-key="your_message">Your
-                                    message</label>
+                                <label class="br-label-control" for="cmessage" data-i18n-key="your_message"></label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="br-form-group" style="display: flex;">
@@ -885,9 +830,11 @@
                 <div class="footer-col first">
                     <h5 class="h5-font-weight">About</h5>
                     <h5 class="h5-font-weight">Brace Education Academy</h5>
+                    <h5 class="h5-font-weight">About</h5>
                     <ul class="list-unstyled br-li-space-lg">
                         <li class="media">
-                            <div class="media-body">Focuses on efficient learning method.
+                            <div class="media-body">Focuses on efficient learning
+                                method.
                                 It’s a one stop solution for smart education</div>
                         </li>
                     </ul>
@@ -899,7 +846,8 @@
                     <h5 class="h5-font-weight">Head Office</h5>
                     <ul class="list-unstyled br-li-space-lg">
                         <li class="media">
-                            <div class="media-body">3rd Floor, Above Pashankar Honda Showroom, JM Road,
+                            <div class="media-body">3rd Floor, Above Pashankar
+                                Honda Showroom, JM Road,
                                 Shivajinagar, Pune, Maharashtra 411005</div>
                         </li>
                         <li class="media">
@@ -910,7 +858,7 @@
                         </li>
                         <li class="media">
                             <div class="media-body"><a class="light-gray upsc"
-                                    href="mailto:admin@braceacademy.in">admin@braceacademy.in</a>
+                                    href="mailto:admin@educationacademy.in">admin@educationacademy.in</a>
                             </div>
                         </li>
                     </ul>
@@ -922,8 +870,8 @@
                     <h5 class="h5-font-weight">Regd. Office </h5>
                     <ul class="list-unstyled br-li-space-lg">
                         <li class="media">
-                            <div class="media-body">Global Port : Pune Banglore Highway Pashan Exit,
-                                Baner, Pune, Maharashtra 411045</div>
+                            <div class="media-body">Global Port : Pune Banglore Highway Pashan
+                                Exit, Baner, Pune, Maharashtra 411045</div>
                         </li>
                     </ul>
                 </div>
@@ -970,11 +918,15 @@
         </div>
         <div class="col-lg-12">
             <p class="p-small" style="text-align: center;padding-bottom: 2rem;">Copyright © 2022 <a class="upsc"
-                    href="http://braceeducationacademy.in/">Brace Education Acacdemy</a> - All rights reserved</p>
+                    href="http://braceeducationacademy.in/">Brace Education Acacdemy</a> - All rights reserved
+            </p>
             </p>
         </div>
     </div>
-    <!-- Scripts -->
+
+    <!-- TESTIMONIALS -->
+
+    <!-- END OF TESTIMONIALS -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
