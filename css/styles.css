@@ -2628,7 +2628,7 @@ input[type=checkbox] {
 }
 
 .topbar {
-	background-color: indianred;
+	background-color: #1a4c70;
 	height: 35px;
 	display: flex;
 	justify-content: end;
@@ -2684,7 +2684,7 @@ input[type=checkbox] {
 	}
 
 	.topbar {
-		background-color: indianred;
+		background-color: #1a4c70;
 		height: 35px;
 	}
 }
