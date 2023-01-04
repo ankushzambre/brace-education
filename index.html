@@ -39,28 +39,34 @@
         change the keys  data-i18n-key in index file
     -->
     <div class="topbar">
-        <select data-i18n-switcher class="language">
+        <select data-i18n-switcher class="language me-5">
             <option value="en"> English </option>
             <option value="mr"> Marathi </option>
         </select>
     </div>
 
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-sm navbar-light" id="neubar">
 
         <!-- LOGO -->
-
         <div class="logo">
             <img src="images/BraceLogo.svg" alt="alternative">
         </div>
-
-        <!-- NAVIGATION MENU -->
-
-        <ul class="nav-links">
-            <!-- NAVIGATION MENUS -->
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <div class="menu">
-                <li><a class="nav-link page-scroll upsc" href="#header" data-i18n-key="home">Home <span
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+                <!-- <li class="nav-item">
+                    <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="#">Pricing</a>
+                </li> -->
+                <li><a class="nav-link page-scroll upsc text-black" href="#header" data-i18n-key="home">Home <span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li><a class="nav-link page-scroll upsc" href="#register" data-i18n-key="register">Register <span
@@ -68,17 +74,7 @@
                 <li><a class="nav-link page-scroll upsc" href="#description" data-i18n-key="details">Details</a></li>
                 <li><a class="nav-link page-scroll upsc" href="#contact" data-i18n-key="contact">Contact</a></li>
 
-                <!-- DROPDOWN MENU -->
-                <!-- <li class="services">
-                    <a href="/">Services</a>
-                    <ul class="dropdown">
-                        <li><a href="/">Dropdown 1 </a></li>
-                        <li><a href="/">Dropdown 2</a></li>
-                        <li><a href="/">Dropdown 2</a></li>
-                        <li><a href="/">Dropdown 3</a></li>
-                        <li><a href="/">Dropdown 4</a></li>
-                    </ul>
-                </li> -->
+
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
                         <a href="https://www.facebook.com/profile.php?id=100080490942002" target="_blank">
@@ -101,8 +97,8 @@
                         </a>
                     </span>
                 </span>
-            </div>
-        </ul>
+            </ul>
+        </div>
     </nav>
 
     <header id="header" class="header">
