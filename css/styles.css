@@ -2733,3 +2733,110 @@ a.navbar-brand {
 .navbar-light .navbar-nav .nav-link:focus {
 	color: #c49624;
 }
+
+.rounded-circle-img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.slider-position {
+	position: relative;
+}
+
+.pevious-slider-icon {
+	position: absolute;
+	bottom: -50px;
+	left: 0px;
+}
+
+.next-slider-icon {
+	position: absolute;
+	bottom: -50px;
+	right: 0px;
+}
+
+@media screen and (min-width:1200px) {
+
+	.slider-position {
+		position: relative;
+	}
+
+	.pevious-slider-icon {
+		position: absolute;
+		top: 50%;
+		left: -35%;
+	}
+
+	.next-slider-icon {
+		position: absolute;
+		top: 50%;
+		right: -35%;
+	}
+}
+
+
+.slider-2 h3 {
+	color: orange;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase
+}
+
+.slider-2 h2 {
+	color: white;
+	font-size: 28px;
+	font-weight: 700
+}
+
+.testimonial-inner {
+	position: relative;
+	top: -174px
+}
+
+.testimonial-pos {
+	position: relative;
+	top: 24px
+}
+
+.testimonial-inner .tour-desc {
+	border-radius: 5px;
+	padding: 40px
+}
+
+.color-grey-3 {
+	font-family: "Montserrat", Sans-serif;
+	font-size: 14px;
+	color: #6c83a2
+}
+
+.testimonial-inner img.tm-people {
+	width: 60px;
+	height: 60px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	max-width: none
+}
+
+.link-name {
+	font-family: "Montserrat", Sans-serif;
+	font-size: 14px;
+	color: #6c83a2
+}
+
+.link-position {
+	font-family: "Montserrat", Sans-serif;
+	font-size: 12px;
+	color: #6c83a2
+}
+
+.swiper-slide .card img {
+	max-width: 100%;
+
+}
+
+.swiper-slide .tour-item {
+	width: 150px;
+}
