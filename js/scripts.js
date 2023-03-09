@@ -42,7 +42,7 @@
         //     disableOnInteraction: false
         // },
         loop: true,
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 30,
         breakpoints: {
             // when window width is >= 320px
