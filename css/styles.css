@@ -2840,3 +2840,17 @@ a.navbar-brand {
 .swiper-slide .tour-item {
 	width: 150px;
 }
+
+.slider-2-img-width {
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width:1200px) {
+
+	.slider-2-img-width {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+}
