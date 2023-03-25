@@ -2849,8 +2849,9 @@ a.navbar-brand {
 @media screen and (min-width:1200px) {
 
 	.slider-2-img-width {
-		width: 60%;
+		width: 69.375rem;
 		margin: 0 auto;
+		max-width: 1320px;
 	}
 
 }
